@@ -23,6 +23,14 @@ const fakeLinks = [
     "https://www.byui.edu"
 ];
 
+// Listen for Enter key press in the input field
+document.getElementById("cmdInput").addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        processCommand();
+    }
+});
+
+
 document.querySelector("button:nth-child(3)").addEventListener("click", () => {
     const randomSite = fakeLinks[Math.floor(Math.random() * fakeLinks.length)];
     window.open(randomSite);
