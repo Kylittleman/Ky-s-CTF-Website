@@ -1,5 +1,5 @@
-console.log("%c Hidden Key: RkxBR3tZb3VfRm91bmRfSXR9", "color: #f5f5dc; font-size: 14px; background: black; padding: 5px;");
-console.log("%c Hint: Try decoding with base64.", "color: #f5f5dc; font-size: 14px; background: black; padding: 5px;");
+console.log("%c Hidden Key: RkxBR3tZb3VfRm91bmRfSXR9", "color: #f5f5dc; font-size: 14px;");
+console.log("%c Hint: Try decoding with base64.", "color: #f5f5dc; font-size: 14px;");
 
 // Fake error message pop-up
 setTimeout(() => {
