@@ -1,15 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset = "UTF-8">
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>KY'S CTF CHALLENGE</title>
         <link rel="stylesheet" href="style.css">
     </head>
 <body>
-    <h1>WELCOME TO MY CTF CHALLENGE!</h1>
+    <h1 class="glitch">WELCOME TO MY CTF CHALLENGE!</h1>
     <p>Good luck...</p>
 
-    <script src="script.js" defer></script>
+    <button onclick="alert('Wrong choice, try again!')">Click for the Secret Code</button>
+    <button onclick="window.open('https://rickroll.com')">Click for Free Hints</button>
+    <button id="brokenButton">Click Me (Does nothing)</button>
+
+    <!-- Fake Key Display -->
+    <p>FLAG{NotTheRealKey}</p>
+    <p id="real-key" class="hidden">FLAG{RealKeyIsSomewhereElse}</p>
+
+    <!-- Terminal for commands -->
+    <div id="terminal">
+        <p>Enter command:</p>
+        <input type="text" id="cmdInput" placeholder="Type here..." />
+        <button onclick="processCommand()">Run</button>
+        <p id="terminalOutput"></p>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
