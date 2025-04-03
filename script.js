@@ -1,5 +1,5 @@
-console.log("%c Hidden Key: RkxBR3tZb3VfRm91bmRfSXR9", "color: lime; font-size: 14px; background: black; padding: 5px;");
-console.log("Hint: Try decoding with base64.");
+console.log("%c Hidden Key: RkxBR3tZb3VfRm91bmRfSXR9", "color: #f5f5dc; font-size: 14px; background: black; padding: 5px;");
+console.log("%c Hint: Try decoding with base64.", "color: #f5f5dc; font-size: 14px; background: black; padding: 5px;");
 
 // Fake error message pop-up
 setTimeout(() => {
@@ -11,8 +11,8 @@ document.getElementById("brokenButton").addEventListener("click", () => {
     alert("Oops, looks like this button is broken...");
 });
 
-// Fake loading effect
-document.body.insertAdjacentHTML("beforeend", "<p class='glitch'>LOADING...</p>");
+// Fake loading effect (Removed blinking)
+document.body.insertAdjacentHTML("beforeend", "<p class='static-text'>LOADING...</p>");
 
 // Random link generator
 const fakeLinks = [
@@ -28,10 +28,8 @@ document.querySelector("button:nth-child(3)").addEventListener("click", () => {
     window.open(randomSite);
 });
 
-// Glitchy header
-setInterval(() => {
-    document.querySelector("h1").classList.toggle("flicker");
-}, 1000);
+// Removed glitchy flickering header
+// Removed setInterval() for flickering effect
 
 // Fake terminal input
 function processCommand() {
@@ -43,7 +41,7 @@ function processCommand() {
     } else if (input === "flag") {
         output.textContent = "Oops! Wrong command. Try again.";
     } else if (input === "hint") {
-        output.textContent = "Check the console logs for a hidden message...";
+        output.textContent = "I inspect your looking for something...";
     } else {
         output.textContent = "Unknown command. Type 'help' for options.";
     }

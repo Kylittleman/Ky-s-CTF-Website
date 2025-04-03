@@ -29,25 +29,12 @@ button:hover {
     display: none;
 }
 
-.glitch {
-    animation: glitch 0.5s infinite;
+/* Removed glitch animation */
+.static-text {
+    text-shadow: 2px 2px 0px #00ff00;
 }
 
-@keyframes glitch {
-    0% { text-shadow: 2px 2px 0px #00ff00; }
-    50% { text-shadow: -2px -2px 0px #00ff00; }
-    100% { text-shadow: 2px 2px 0px #00ff00; }
-}
-
-@keyframes flicker {
-    0% { opacity: 1; }
-    50% { opacity: 0.1; }
-    100% { opacity: 1; }
-}
-
-.flicker {
-    animation: flicker 0.5s infinite;
-}
+/* Removed flicker animation */
 
 #terminal {
     background-color: black;
