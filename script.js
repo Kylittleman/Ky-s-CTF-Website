@@ -64,3 +64,9 @@ function checkFlag() {
         result.style.color = "#ff4444";
     }
 }
+
+document.getElementById("flagInput").addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+        checkFlag();
+    }
+});
