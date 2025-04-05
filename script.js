@@ -12,11 +12,7 @@ document.body.insertAdjacentHTML("beforeend", "<p class='static-text'>LOADING...
 
 // Random link generator
 const fakeLinks = [
-    "https://rickroll.com",
-    "https://www.wikipedia.org",
-    "https://store.steampowered.com",
-    "https://x.com",
-    "https://www.byui.edu"
+    "https://www.youtube.com/watch?v=xvFZjo5PgG0"
 ];
 
 // Listen for Enter key press in the input field
