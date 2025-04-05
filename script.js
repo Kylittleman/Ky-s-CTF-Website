@@ -1,5 +1,4 @@
 console.log("%c Hidden Key: RkxBR3tZb3VfRm91bmRfSXR9", "color:rgb(255, 255, 255); font-size: 14px;");
-console.log("%c Hint: Try decoding with base64.", "color:rgb(255, 255, 255); font-size: 14px;");
 
 // Fake error message pop-up
 setTimeout(() => {
