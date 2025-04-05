@@ -50,3 +50,17 @@ function processCommand() {
         output.textContent = "Unknown command. Type 'help' for options.";
     }
 }
+
+function checkFlag() {
+    const input = document.getElementById("flagInput").value.trim();
+    const result = document.getElementById("flagResult");
+    const correctFlag = "FLAG{c0ngr@ts_y0u_w0n_66}";
+
+    if (input === correctFlag) {
+        result.textContent = "✅ Correct! You've captured the flag!";
+        result.style.color = "#00ff00";
+    } else {
+        result.textContent = "❌ Incorrect flag. Try again.";
+        result.style.color = "#ff4444";
+    }
+}
