@@ -1,3 +1,4 @@
+console.log("%c 42524F4E5A4546414C4C24", "color:rgb(242, 11, 11); font-size: 14px;");
 console.log("%c /secret.zip", "color:rgb(255, 255, 255); font-size: 14px;");
 console.log("%c HINT: linux: 7z x secret.zip, HINT: sudo apt install 7zip", "color:rgb(255, 255, 255); font-size: 14px;");
 
