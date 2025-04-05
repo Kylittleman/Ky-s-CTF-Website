@@ -1,10 +1,5 @@
 console.log("%c Hidden Key: RkxBR3tZb3VfRm91bmRfSXR9", "color:rgb(255, 255, 255); font-size: 14px;");
 
-// Fake error message pop-up
-setTimeout(() => {
-    alert("SYSTEM ERROR: Memory overload detected!");
-}, 5000);
-
 // Broken button effect
 document.getElementById("brokenButton").addEventListener("click", () => {
     alert("Oops, looks like this button is broken...");
