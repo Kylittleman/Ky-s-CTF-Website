@@ -1,4 +1,5 @@
-console.log("%c Hidden Key: RkxBR3tZb3VfRm91bmRfSXR9", "color:rgb(255, 255, 255); font-size: 14px;");
+console.log("%c /secret.zip", "color:rgb(255, 255, 255); font-size: 14px;");
+console.log("%c HINT: linux: 7z x secret.zip, HINT: sudo apt install 7zip", "color:rgb(255, 255, 255); font-size: 14px;");
 
 // Broken button effect
 document.getElementById("brokenButton").addEventListener("click", () => {
