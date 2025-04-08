@@ -51,13 +51,19 @@ function processCommand() {
 }
 
 // Flag check - no hashing
-function checkFlag() {
+async function checkFlag() {
     const input = document.getElementById("flagInput").value.trim();
     const result = document.getElementById("flagResult");
 
-    const correctFlag = "itc101{c0ngrats_y0u_w0n}";
+    const encoder = new TextEncoder();
+    const data = encoder.encode(input);
+    const hashBuffer = await crypto.subtle.digest("SHA-256", data);
+    const hashArray = Array.from(new Uint8Array(hashBuffer));
+    const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
 
-    if (input === correctFlag) {
+    const correctHash = "dd845e0c333f361dd5fb740f29b3f72efffc128d4a91f3e1921c89447094b2a7";
+
+    if (hashHex === correctHash) {
         result.textContent = "✅ Correct! You've captured the flag!";
         result.style.color = "#00ff00";
     } else {
@@ -65,3 +71,4 @@ function checkFlag() {
         result.style.color = "#ff4444";
     }
 }
+
