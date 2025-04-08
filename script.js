@@ -55,7 +55,7 @@ function checkFlag() {
     const input = document.getElementById("flagInput").value.trim();
     const result = document.getElementById("flagResult");
 
-    const correctFlag = "itc101{c0ngrats y0u w0n}";
+    const correctFlag = "itc101{c0ngrats_y0u_w0n}";
 
     if (input === correctFlag) {
         result.textContent = "✅ Correct! You've captured the flag!";
