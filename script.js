@@ -50,6 +50,7 @@ function processCommand() {
     }
 }
 
+
 // Flag check - no hashing
 async function checkFlag() {
     const input = document.getElementById("flagInput").value.trim();
